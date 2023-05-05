@@ -1,6 +1,40 @@
 # Solomon RESTful API
 A RESTful API for the Solomon project
 
+## Getting Started
+### Prerequisites
+Before you can build and run the file, you'll need to have the following installed:
+- Go
+- Mongo DBMS
+### Step 1: Clone the repository
+Open a terminal and navigate to the directory where you want to clone the repository. Then, run the following command to clone the repository:
+```bash
+git clone https://github.com/Solom-Onion/API/
+```
+### Step 2: Edit the config file
+In the root directory of the cloned repository, you'll find a file named config.solo. Open this file in a text editor and modify the following variables according to your preferences:
+```env
+# Mongo URI, always starts with mongodb://HOST:IP
+mongo_uri=mongodb://localhost:27017
+# Server port, you already know
+server_port=8080
+# Mongo Database
+database=dev
+# Mongo Collection
+collection=my_collection
+# Limit for database results
+results_limit=15
+```
+### Step 3: Build the file
+Navigate to the root directory of the cloned repository in the terminal. Then, run the following command to build the file:
+```bash
+go build
+```
+### Step 4: Run the file
+```
+./api
+```
+_______________
 
 ## Examples
 ### `GET /api/search`
